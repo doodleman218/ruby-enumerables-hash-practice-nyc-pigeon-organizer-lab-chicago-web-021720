@@ -9,9 +9,9 @@ def nyc_pigeon_organizer(data)
         end #1st if
         if !new_hash[name][category]
           new_hash[name][category] = []
+    binding.pry
         end #2nd if
    new_hash[name][category] << new_att.to_s
-    binding.pry
       end #names.each
     end #attribute.each
   end #data.each
