@@ -5,7 +5,7 @@ def nyc_pigeon_organizer(data)
     attribute.each do |new_att, names|
       names.each do |name|
         if !new_hash[name]
-          new_hash[name] = {bla}
+          new_hash[name] = "bla"
     binding.pry
         end #1st if
         if !new_hash[name][category]
