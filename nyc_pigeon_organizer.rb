@@ -6,14 +6,15 @@ def nyc_pigeon_organizer(data)
       names.each do |name|
         if !new_hash[name]
           new_hash[name] = {}
-        end
+        end #1st if
         if !new_hash[name][category]
           new_hash[name][category] = []
-        end
+    binding.pry
+        end #2nd if
    new_hash[name][category] << new_att.to_s
-      end
-    end
-  end
+      end #names.each
+    end #attribute.each
+  end #data.each
  new_hash
 end
 
